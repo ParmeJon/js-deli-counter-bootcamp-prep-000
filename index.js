@@ -24,8 +24,8 @@ function currentLine(currentLine) {
     for (var i = 0; i < currentLine.length; i++) {
      var linePosition = i + 1;
      var lineName = currentLine[i];
-     katzDeliLine.push(linePosition, lineName);
-     return `The line is currently: ${katzDeliLine}`
+     katzDeliLine.push(`${linePosition}. ${lineName}`);
     }
+     return `The line is currently: ${katzDeliLine}`
   }
 }
