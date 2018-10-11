@@ -21,9 +21,10 @@ function currentLine(currentLine) {
   if (currentLine.length === 0) {
     return "The line is currently empty."
   } else {
-    for var (i = 0; i < currentLine.length; i++) {
-      var number = i; 
-      var name = currentLine[i];
+    for (var i = 0; i < currentLine.length; i++) {
+     var linePosition = i + 1;
+     var lineName = currentLine[i];
+     return `The line is currently: ${linePosition}. ${lineName},
     }
   }
 }
